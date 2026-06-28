@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#050507" />
+  <title>Contact | Evans Paving Pty Ltd</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div class="page">
+    <header>
+      <div class="navbar">
+        <a class="brand" href="./index.html" aria-label="Evans Paving Pty Ltd">
+          <span class="mark" aria-hidden="true"><img src="./images/Logo.jpg" alt="Logo" /></span>
+          <span class="text">
+            <span class="name">Evans Paving Pty Ltd</span>
+            <span class="tag">The Beauty of Your House Is In Our Hands</span>
+          </span>
+        </a>
+
+        <nav class="navlinks" aria-label="Primary navigation">
+          <a href="./about.html"><i class="fa-solid fa-star"></i> About</a>
+          <a href="./service.html"><i class="fa-solid fa-hammer"></i> Services</a>
+          <a href="./project.html"><i class="fa-solid fa-images"></i> Projects</a>
+          <a href="./contact.html" aria-current="page"><i class="fa-solid fa-phone"></i> Contact</a>
+        </nav>
+
+        <div class="actions">
+          <a class="btn" href="./contact.html"><span class="icon" aria-hidden="true"><i class="fa-solid fa-gem"></i></span> Get a Quote</a>
+          <button class="icon-btn hamburger" aria-label="Open menu" type="button"><i class="fa-solid fa-bars"></i></button>
+        </div>
+      </div>
+
+      <div class="mobile-drawer" aria-hidden="true">
+        <div class="head">
+          <div class="brand" style="min-width:auto">
+            <span class="mark" aria-hidden="true"><img src="./images/Logo.jpg" alt="Logo" /></span>
+            <span class="text">
+              <span class="name">Evans Paving Pty Ltd</span>
+              <span class="tag">Premium Construction</span>
+            </span>
+          </div>
+          <button class="icon-btn drawer-close" aria-label="Close menu" type="button"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="links">
+          <a href="./about.html"><i class="fa-solid fa-star" style="color:var(--gold)"></i> About</a>
+          <a href="./service.html"><i class="fa-solid fa-hammer" style="color:var(--gold)"></i> Services</a>
+          <a href="./project.html"><i class="fa-solid fa-images" style="color:var(--gold)"></i> Projects</a>
+          <a href="./contact.html"><i class="fa-solid fa-phone" style="color:var(--gold)"></i> Contact</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section hero" style="padding-top:46px;">
+        <div class="kicker reveal">Contact</div>
+        <h1 class="h-title reveal">Let’s talk about your next upgrade</h1>
+        <p class="h-sub reveal">Send your details and we’ll get back to you with a premium quote.</p>
+
+        <div class="hero-card reveal" style="margin-top:22px;">
+          <div style="padding:18px;">
+            <div class="grid-3" style="margin-top:0; grid-template-columns: repeat(3, 1fr);">
+              <div class="card" style="box-shadow:none; background:rgba(255,255,255,.02); border-color:rgba(212,175,55,.20); margin:0;">
+                <div class="top"><span class="pill"><i class="fa-solid fa-phone" style="margin-right:8px;"></i> Phone</span><i class="fa-solid fa-phone" style="color:var(--gold)"></i></div>
+                <h3 style="margin-top:10px;">063 603 60702</h3>
+                <p>Call for urgent or time-sensitive projects.</p>
+              </div>
+              <div class="card" style="box-shadow:none; background:rgba(255,255,255,.02); border-color:rgba(212,175,55,.20); margin:0;">
+                <div class="top"><span class="pill"><i class="fa-solid fa-envelope" style="margin-right:8px;"></i> Email 1</span><i class="fa-solid fa-envelope" style="color:var(--gold)"></i></div>
+                <h3 style="margin-top:10px;">apsthendoemulaudzy@gmail.com</h3>
+                <p>Send your requirements and photos.</p>
+              </div>
+              <div class="card" style="box-shadow:none; background:rgba(255,255,255,.02); border-color:rgba(212,175,55,.20); margin:0;">
+                <div class="top"><span class="pill"><i class="fa-solid fa-at" style="margin-right:8px;"></i> Email 2</span><i class="fa-solid fa-at" style="color:var(--gold)"></i></div>
+                <h3 style="margin-top:10px;">Evansconstruction@foskor.co.za</h3>
+                <p>Alternative contact email.</p>
+              </div>
+            </div>
+
+            <form class="form" onsubmit="return false;" id="contactForm">
+              <div class="field">
+                <label for="name">Full Name</label>
+                <input id="name" name="name" type="text" placeholder="Your name" required />
+              </div>
+              <div class="field">
+                <label for="phone">Phone Number</label>
+                <input id="phone" name="phone" type="tel" placeholder="e.g. 07..." required />
+              </div>
+              <div class="field">
+                <label for="service">Service Needed</label>
+                <input id="service" name="service" type="text" placeholder="Paving, Painting, Landscaping..." required />
+              </div>
+              <div class="field">
+                <label for="budget">Budget Range</label>
+                <input id="budget" name="budget" type="text" placeholder="Optional" />
+              </div>
+              <div class="field" style="grid-column: 1 / -1;">
+                <label for="message">Project Details</label>
+                <textarea id="message" name="message" placeholder="Tell us about your project, location and timeline" required></textarea>
+              </div>
+
+              <div style="grid-column: 1 / -1; display:flex; flex-wrap:wrap; gap:12px; align-items:center;">
+                <button class="btn" type="submit" onclick="handleSubmit()">
+                  <span class="icon" aria-hidden="true"><i class="fa-solid fa-paper-plane"></i></span>
+                  Send Message
+                </button>
+                <div id="formStatus" class="copy" role="status" aria-live="polite"></div>
+              </div>
+            </form>
+
+            <script>
+              function handleSubmit(){
+                const status = document.getElementById('formStatus');
+                const name = document.getElementById('name').value.trim();
+                const phone = document.getElementById('phone').value.trim();
+                const service = document.getElementById('service').value.trim();
+                const budget = document.getElementById('budget').value.trim();
+                const message = document.getElementById('message').value.trim();
+
+                const subject = encodeURIComponent(`Quote request — ${service || 'Service'}`);
+                const body = encodeURIComponent(
+                  `Name: ${name}\nPhone: ${phone}\nService: ${service}\nBudget: ${budget || 'N/A'}\n\nMessage:\n${message}`
+                );
+
+                // Open email client (no backend needed)
+                window.location.href = `mailto:apsthendoemulaudzy@gmail.com?subject=${subject}&body=${body}`;
+                status.textContent = 'Opening your email client...';
+                return false;
+              }
+            </script>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-inner">
+        <div class="foot-left">
+          <div class="f-name">Evans Paving Pty Ltd</div>
+          <div class="f-sub">The Beauty of Your House Is In Our Hands</div>
+          <div class="f-sub">Phone: 063 603 60702</div>
+          <div class="f-sub">Email 1: apsthendoemulaudzy@gmail.com</div>
+          <div class="f-sub">Email 2: Evansconstruction@foskor.co.za</div>
+        </div>
+        <div class="foot-links">
+          <a href="./about.html"><i class="fa-solid fa-star" style="color:var(--gold)"></i> About</a>
+          <a href="./service.html"><i class="fa-solid fa-hammer" style="color:var(--gold)"></i> Services</a>
+          <a href="./project.html"><i class="fa-solid fa-images" style="color:var(--gold)"></i> Projects</a>
+          <a href="./contact.html"><i class="fa-solid fa-phone" style="color:var(--gold)"></i> Contact</a>
+        </div>
+        <div class="foot-right">
+          <div class="copy">© <span id="year"></span> Evans Paving Pty Ltd. All rights reserved.</div>
+          <div class="copy">Premium quote requests</div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script src="./script.js"></script>
+</body>
+</html>
+
